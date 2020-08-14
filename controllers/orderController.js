@@ -17,11 +17,6 @@ module.exports = {
                 noOfOrders: { $sum: 1 },
                 averageBillValue: {$avg: "$subtotal"},     
             } },
-            // {
-            //     $addFields : {
-            //         "isNumber" : { $toInt : "$averageBillValue" },
-            //       },
-            // },
             {$project:{
                 _id: 0,
                 name: "$_id.name",

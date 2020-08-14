@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-// define the schema for Pricing and other details of products with variations
+// define the schema for Users
 var UserSchema = new mongoose.Schema({
     "userId": {
         type: Number
